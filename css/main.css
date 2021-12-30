@@ -1,0 +1,13 @@
+.main_wrap{
+      width: 100%;
+      height: 100%;
+}
+
+.main_bg{
+      width: 100%;
+      height:100vh;
+/*       background: url('../images/ez-sketch.gif');
+      background-repeat: no-repeat;
+      background-attachment: cover; */
+      background: url("../images/ez-sketch.gif") center/cover no-repeat;
+}

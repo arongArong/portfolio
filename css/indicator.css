@@ -1,0 +1,79 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
+#floatdiv {
+      position: fixed;
+      right: 1%;
+      top: 40%;
+      width: 10px;
+      height: 100%;
+      float: left;
+      transform: rotate();
+      z-index: 99999;
+}
+
+#floatdiv ul {
+      list-style: none;
+      border: 0;
+      margin: 0;
+      padding: 0;
+}
+
+#floatdiv ul li span {
+      position: relative;
+      margin-bottom: 40px;
+      cursor: pointer;
+      transform: rotate(-90deg);
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid #C5C1FF;
+      transition: 0.4s;
+}
+
+#floatdiv ul li span a {
+      position: absolute;
+      right: -1px;
+      top: -3px;
+      width: 100px;
+      text-align: center;
+      padding: 0px 5px;
+      color: #ff6b7e;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 18px;
+      opacity: 0;
+      transition: all 0.6s;
+      margin-right: 0;
+      float: left;
+      transform: rotate(180deg);
+      background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+      border: #C5C1FF 1px solid;
+      border-radius: 80px;
+}
+
+#floatdiv ul li:hover span,
+#floatdiv ul li.active span {
+      display: block;
+      margin-bottom: 120px;
+      background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+      width: 18px;
+      height: 18px;
+}
+
+#floatdiv ul li:hover span a,
+#floatdiv ul li.active span a {
+      opacity: 1;
+      color: black;
+}
+
+.btnwrap{
+      position: fixed;
+      width: 40px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background: rgb(0, 0, 0);
+      z-index: 999999;
+}

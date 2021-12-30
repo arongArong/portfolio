@@ -1,0 +1,113 @@
+.contBox strong{
+      color: white;
+      font-size: 30px;
+}
+
+.contBox p{
+      color: white;
+      font-size: 25px;
+}
+
+.contBox{
+      z-index: 999;
+}
+
+#css_slider {
+      width: 1450px;
+      height: 725px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: black;
+}
+
+#css_slider>.inwrap {
+      margin: 0 -4%;
+}
+
+#css_slider>.inwrap>ul {
+      width: 100%;
+}
+
+#css_slider>.inwrap>ul::after {
+      content: '';
+      display: block;
+      clear: both;
+}
+
+#css_slider>.inwrap>ul>li {
+      position: relative;
+      float: left;
+      width: 33.333%;
+      height: 725px;
+      overflow: hidden;
+      transform: skew(-12deg, 0);
+      transition: all .2s ease-in-out;
+}
+
+#css_slider>.inwrap>ul>li::before,
+#css_slider>.inwrap>ul>li::after {
+      content: '';
+      position: absolute;
+      left: -20%;
+      top: 0;
+      width: 140%;
+      height: 725px;
+      transform: skew(12deg, 0);
+      transition: all 0.2s ease-in-out;
+      overflow: hidden;
+}
+
+#css_slider>.inwrap>ul>.css01::before {
+      background: url(../images/yslbeautu.jpg) no-repeat center / cover;
+      -webkit-filter: brightness(50%);
+      -moz-filter: brightness(50%);
+      -o-filter: brightness(50%);
+      -ms-filter: brightness(50%);
+      filter: brightness(50%);
+}
+
+#css_slider>.inwrap>ul>.css01::after{
+      background: url(../images/yslbeautu.jpg) no-repeat center / cover;
+      opacity: 0;
+}
+
+#css_slider>.inwrap>ul>.css02::before {
+      background: url(../images/yslbeautu.jpg) no-repeat center / cover;
+      -webkit-filter: brightness(50%);
+      -moz-filter: brightness(50%);
+      -o-filter: brightness(50%);
+      -ms-filter: brightness(50%);
+      filter: brightness(50%);
+}
+
+#css_slider>.inwrap>ul>.css02::after{
+      background: url(../images/yslbeautu.jpg) no-repeat center / cover;
+      opacity: 0;
+}
+
+#css_slider>.inwrap>ul>.css03::before {
+      background: url(../images/yslbeautu.jpg) no-repeat center / cover;
+      -webkit-filter: brightness(50%);
+      -moz-filter: brightness(50%);
+      -o-filter: brightness(50%);
+      -ms-filter: brightness(50%);
+      filter: brightness(50%);
+}
+
+#css_slider>.inwrap>ul>.css03::after{
+      background: url(../images/yslbeautu.jpg) no-repeat center / cover;
+      opacity: 0;
+}
+
+#css_slider.on>.inwrap>ul>li{
+      width: 30%;
+}
+
+#css_slider.on>.inwrap>ul>li.on{
+      width: 40%;
+}
+
+#css_slider.on>.inwrap>ul>li.on::after{
+      opacity: 1;     
+}
+
